@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+    <link rel="stylesheet" href="recipe.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <a href="../home/Home.html" class="back-link">&larr; Back to Search</a>
+    </div>
+
+    <div id="loader" class="loader-msg">
+        <p>Loading...</p>
+    </div>
+
+    <div id="error-state" class="error-msg" style="display:none;">
+        <p>Could not load recipe. <a href="../home/Home.html">Go back</a></p>
+    </div>
+
+    <div id="recipe-page" class="recipe-container" style="display:none;">
+
+        <div class="recipe-header">
+            <img id="hero-img" src="" alt="" class="recipe-img">
+            <div class="recipe-info">
+                <h1 id="meal-name"></h1>
+                <p id="meta-info" class="meta-text"></p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="video-section" style="display:none;">
+            <h2>Watch Video</h2>
+            <div class="video-wrapper">
+                <iframe id="recipe-video" src="" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <hr>
+        </div>
+
+        <div class="recipe-body">
+            <div class="ingredients-col">
+                <h2>Ingredients</h2>
+                <ul id="ingredients-list"></ul>
+            </div>
+
+            <div class="instructions-col">
+                <h2>Instructions</h2>
+                <div id="instructions"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="recipe.js"></script>
+</body>
+</html>
